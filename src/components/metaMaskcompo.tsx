@@ -13,6 +13,7 @@ const MetaMaskcompo = () => {
         if (provider) {
           try {
             const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+            
             setAccount(accounts[0]);
             navigation("/wallet")
 

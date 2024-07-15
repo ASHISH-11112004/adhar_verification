@@ -8,13 +8,11 @@ function App() {
     <AnonAadhaarProvider>
         <BrowserRouter>
       <Routes>
-        <Route path="/" element={<MetaMaskcompo />}>
+        <Route path="/" element={<MetaMaskcompo />}/>
           <Route path='/wallet' element={<WalletConnection />} />
-       
-        </Route>
       </Routes>
     </BrowserRouter>
-      {/* <WalletConnection /> */}
+     
     </AnonAadhaarProvider>
   );
 }
